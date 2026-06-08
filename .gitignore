@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build output
+dist/
+*/dist/
+
+# Environment variables
+.env
+*/.env
+
+# Prisma generated client
+*/src/generated/
+
+# Prisma migrations (optional — remove if you want to track them)
+*/prisma/migrations/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Jest cache
+coverage/
+*/coverage/
+.jest-cache/
