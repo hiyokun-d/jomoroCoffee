@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "prisma generate && nest build && cp -r src/generated dist/src/generated",
+    "build": "prisma generate && nest build && shx cp -r src/generated dist/src/generated",
     "postinstall": "prisma generate",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -63,6 +63,7 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.3",
+    "shx": "^0.3.4",
     "typescript-eslint": "^8.20.0"
   },
   "jest": {

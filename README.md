@@ -79,10 +79,23 @@ This creates three databases:
 
 ### 4. Configure Environment Variables
 
-Each service has a `.env.example` file. Copy it to `.env` in each folder:
+Each service has a `.env.example` file. You need to duplicate it and rename the copy to `.env` inside each service folder.
 
-```bash
-# In the project root folder
+**Option A — File Explorer (works on all Windows):**
+1. Open `auth-service` folder → find `.env.example`
+2. Copy the file (Ctrl+C) → paste it in the same folder (Ctrl+V)
+3. Rename the copy to `.env`
+4. Repeat for `product-service` and `transaction-service`
+
+**Option B — PowerShell:**
+```powershell
+Copy-Item auth-service\.env.example auth-service\.env
+Copy-Item product-service\.env.example product-service\.env
+Copy-Item transaction-service\.env.example transaction-service\.env
+```
+
+**Option C — Command Prompt (CMD):**
+```cmd
 copy auth-service\.env.example auth-service\.env
 copy product-service\.env.example product-service\.env
 copy transaction-service\.env.example transaction-service\.env
